@@ -1,0 +1,1808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mansoor Ahmed | Cybersecurity & IT Infrastructure Consultant | Bari, Italy</title>
+<meta name="description" content="Senior Cybersecurity & IT Infrastructure Consultant with 17+ years of experience. Specialising in ISO 27001, GRC, Security Assessments, IT Security Consulting, and Cybersecurity Policies. Based in Bari, Italy — available globally.">
+<meta name="keywords" content="cybersecurity consultant, cybersecurity consultant Italy, ISO 27001 consultant, GRC consultant, security assessment, cybersecurity audit, IT security consultant, cybersecurity consultant Bari, ISO 27001 implementation, security policies, risk assessment">
+<meta name="author" content="Mansoor Ahmed">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://themansoor.com">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Mansoor Ahmed | Cybersecurity & IT Infrastructure Consultant">
+<meta property="og:description" content="17+ years securing enterprise environments. ISO 27001, GRC, Security Assessment, IT Infrastructure Consulting. Available globally from Bari, Italy.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://themansoor.com">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mansoor Ahmed | Cybersecurity Consultant">
+<meta name="twitter:description" content="17+ years securing enterprise environments. ISO 27001, GRC, Security Assessment, IT Consulting.">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232563EB'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='16' font-weight='700' fill='white' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+
+<style>
+  /* === TOKENS === */
+  :root {
+    --navy: #0D1B2A;
+    --navy-mid: #1E3A5F;
+    --blue: #2563EB;
+    --blue-light: #3B82F6;
+    --blue-pale: #EFF6FF;
+    --slate: #64748B;
+    --slate-light: #94A3B8;
+    --white: #FFFFFF;
+    --off-white: #F8FAFC;
+    --border: #E2E8F0;
+    --text: #1E293B;
+    --text-light: #475569;
+
+    --font-display: 'Sora', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    --radius: 8px;
+    --radius-lg: 14px;
+    --shadow: 0 1px 3px rgba(0,0,0,.06), 0 4px 16px rgba(0,0,0,.06);
+    --shadow-md: 0 4px 24px rgba(37,99,235,.10);
+  }
+
+  /* === RESET === */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; font-size: 16px; }
+  body {
+    font-family: var(--font-body);
+    color: var(--text);
+    background: var(--white);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; text-decoration: none; }
+  ul { list-style: none; }
+  button { border: none; background: none; cursor: pointer; font: inherit; }
+
+  /* === LAYOUT === */
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  section { padding: 88px 0; }
+
+  /* === NAV === */
+  #nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: rgba(255,255,255,.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    transition: box-shadow .2s;
+  }
+  #nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,.08); }
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+  }
+  .nav-logo {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--navy);
+    letter-spacing: -.02em;
+  }
+  .nav-logo span { color: var(--blue); }
+  .nav-links {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+  .nav-links a {
+    font-size: .875rem;
+    font-weight: 500;
+    color: var(--text-light);
+    transition: color .15s;
+  }
+  .nav-links a:hover { color: var(--blue); }
+  .nav-cta {
+    background: var(--blue);
+    color: var(--white) !important;
+    padding: 8px 20px;
+    border-radius: var(--radius);
+    font-weight: 600 !important;
+    transition: background .15s !important;
+  }
+  .nav-cta:hover { background: var(--navy-mid) !important; color: var(--white) !important; }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    padding: 4px;
+    cursor: pointer;
+  }
+  .hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--navy);
+    border-radius: 2px;
+    transition: all .25s;
+  }
+  .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .hamburger.open span:nth-child(2) { opacity: 0; }
+  .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    top: 64px; left: 0; right: 0;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    padding: 24px;
+    z-index: 99;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .mobile-menu.open { display: flex; }
+  .mobile-menu a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text);
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .mobile-menu a:last-child { border: none; }
+
+  /* === HERO === */
+  #hero {
+    padding-top: 140px;
+    padding-bottom: 96px;
+    background: var(--navy);
+    position: relative;
+    overflow: hidden;
+  }
+  #hero::before {
+    content: '';
+    position: absolute;
+    top: -120px; right: -120px;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(37,99,235,.18) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  #hero::after {
+    content: '';
+    position: absolute;
+    bottom: -80px; left: -80px;
+    width: 320px; height: 320px;
+    background: radial-gradient(circle, rgba(37,99,235,.10) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: .75rem;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--blue-light);
+    margin-bottom: 24px;
+  }
+  .hero-eyebrow::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--blue-light);
+  }
+  .hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.4rem, 5vw, 3.8rem);
+    font-weight: 800;
+    line-height: 1.1;
+    color: var(--white);
+    letter-spacing: -.03em;
+    max-width: 780px;
+    margin-bottom: 24px;
+  }
+  .hero-title .accent { color: var(--blue-light); }
+  .hero-sub {
+    font-size: 1.125rem;
+    color: rgba(255,255,255,.65);
+    max-width: 580px;
+    margin-bottom: 40px;
+    line-height: 1.75;
+  }
+  .hero-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+  .pill {
+    font-size: .8rem;
+    font-weight: 500;
+    color: rgba(255,255,255,.80);
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.12);
+    padding: 6px 16px;
+    border-radius: 100px;
+  }
+  .hero-actions {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .btn-primary {
+    background: var(--blue);
+    color: var(--white);
+    padding: 14px 28px;
+    border-radius: var(--radius);
+    font-weight: 600;
+    font-size: .9375rem;
+    transition: background .15s, transform .15s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .btn-primary:hover { background: #1D4ED8; transform: translateY(-1px); }
+  .btn-outline {
+    background: transparent;
+    color: var(--white);
+    padding: 14px 28px;
+    border-radius: var(--radius);
+    font-weight: 600;
+    font-size: .9375rem;
+    border: 1.5px solid rgba(255,255,255,.25);
+    transition: border-color .15s, background .15s, transform .15s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .btn-outline:hover { border-color: rgba(255,255,255,.6); background: rgba(255,255,255,.06); transform: translateY(-1px); }
+
+  .hero-stats {
+    display: flex;
+    gap: 40px;
+    margin-top: 56px;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255,255,255,.10);
+    flex-wrap: wrap;
+  }
+  .stat-item { }
+  .stat-num {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: -.03em;
+  }
+  .stat-num span { color: var(--blue-light); }
+  .stat-label {
+    font-size: .8125rem;
+    color: rgba(255,255,255,.5);
+    margin-top: 2px;
+  }
+
+  /* === SECTION HEADERS === */
+  .section-label {
+    font-size: .75rem;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--blue);
+    margin-bottom: 12px;
+  }
+  .section-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-weight: 700;
+    color: var(--navy);
+    letter-spacing: -.025em;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+  .section-sub {
+    font-size: 1.0625rem;
+    color: var(--text-light);
+    max-width: 560px;
+    line-height: 1.75;
+  }
+  .section-header { margin-bottom: 52px; }
+
+  /* === EXPERTISE === */
+  #expertise { background: var(--off-white); }
+  .expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+  }
+  .expertise-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 20px 22px;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    transition: border-color .15s, box-shadow .15s;
+  }
+  .expertise-card:hover { border-color: var(--blue); box-shadow: var(--shadow-md); }
+  .expertise-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: var(--blue-pale);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .expertise-icon svg { width: 18px; height: 18px; color: var(--blue); fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .expertise-name {
+    font-size: .875rem;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.35;
+  }
+
+  /* === SERVICES === */
+  #services { background: var(--white); }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  .service-card {
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 28px 26px;
+    transition: border-color .15s, box-shadow .15s, transform .15s;
+    position: relative;
+  }
+  .service-card:hover { border-color: var(--blue); box-shadow: var(--shadow-md); transform: translateY(-2px); }
+  .service-num {
+    font-family: var(--font-display);
+    font-size: .7rem;
+    font-weight: 700;
+    color: var(--blue);
+    letter-spacing: .08em;
+    margin-bottom: 14px;
+    opacity: .6;
+  }
+  .service-name {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 10px;
+    line-height: 1.3;
+  }
+  .service-desc {
+    font-size: .875rem;
+    color: var(--text-light);
+    line-height: 1.7;
+  }
+
+  /* === ABOUT === */
+  #about { background: var(--off-white); }
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: start;
+  }
+  .about-text p {
+    color: var(--text-light);
+    margin-bottom: 18px;
+    line-height: 1.8;
+  }
+  .about-text p:last-child { margin-bottom: 0; }
+  .about-highlight {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--text) !important;
+    border-left: 3px solid var(--blue);
+    padding-left: 18px;
+    margin-bottom: 24px !important;
+  }
+  .about-details { }
+  .about-detail-item {
+    display: flex;
+    gap: 14px;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .about-detail-item:last-child { border-bottom: none; }
+  .detail-label {
+    font-size: .8125rem;
+    font-weight: 600;
+    color: var(--slate);
+    min-width: 110px;
+    padding-top: 2px;
+  }
+  .detail-value {
+    font-size: .9375rem;
+    color: var(--text);
+    line-height: 1.5;
+  }
+  .detail-value a { color: var(--blue); }
+
+  /* === EXPERIENCE === */
+  #experience { background: var(--white); }
+  .timeline {
+    position: relative;
+    padding-left: 32px;
+  }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 8px;
+    bottom: 0;
+    width: 2px;
+    background: var(--border);
+  }
+  .timeline-item {
+    position: relative;
+    margin-bottom: 48px;
+  }
+  .timeline-item:last-child { margin-bottom: 0; }
+  .timeline-dot {
+    position: absolute;
+    left: -29px;
+    top: 6px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--white);
+    border: 2px solid var(--blue);
+  }
+  .timeline-dot.current { background: var(--blue); }
+  .timeline-date {
+    font-size: .8125rem;
+    font-weight: 500;
+    color: var(--blue);
+    margin-bottom: 6px;
+  }
+  .timeline-role {
+    font-family: var(--font-display);
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 2px;
+  }
+  .timeline-company {
+    font-size: .9375rem;
+    color: var(--slate);
+    margin-bottom: 14px;
+    font-weight: 500;
+  }
+  .timeline-body { }
+  .timeline-body p {
+    font-size: .9rem;
+    color: var(--text-light);
+    margin-bottom: 10px;
+    line-height: 1.7;
+  }
+  .timeline-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 12px;
+  }
+  .tag {
+    font-size: .75rem;
+    font-weight: 500;
+    color: var(--blue);
+    background: var(--blue-pale);
+    padding: 4px 12px;
+    border-radius: 100px;
+  }
+
+  /* === ACHIEVEMENTS === */
+  #achievements { background: var(--navy); }
+  #achievements .section-title { color: var(--white); }
+  #achievements .section-label { color: var(--blue-light); }
+  #achievements .section-sub { color: rgba(255,255,255,.55); }
+  .achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+  }
+  .achievement-card {
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(255,255,255,.09);
+    border-radius: var(--radius-lg);
+    padding: 26px 22px;
+    text-align: center;
+  }
+  .ach-num {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--white);
+    letter-spacing: -.02em;
+    margin-bottom: 6px;
+  }
+  .ach-num .ach-accent { color: var(--blue-light); }
+  .ach-label {
+    font-size: .8125rem;
+    color: rgba(255,255,255,.55);
+    line-height: 1.5;
+  }
+
+  /* === SKILLS === */
+  #skills { background: var(--off-white); }
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+  }
+  .skill-group {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 26px;
+  }
+  .skill-group-title {
+    font-family: var(--font-display);
+    font-size: .875rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+    letter-spacing: -.01em;
+  }
+  .skill-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .badge {
+    font-size: .78rem;
+    font-weight: 500;
+    color: var(--text-light);
+    background: var(--off-white);
+    border: 1px solid var(--border);
+    padding: 5px 12px;
+    border-radius: 6px;
+    transition: border-color .15s, color .15s;
+  }
+  .badge:hover { border-color: var(--blue); color: var(--blue); }
+
+  /* === CERTIFICATIONS === */
+  #certifications { background: var(--white); }
+  .certs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+  }
+  .cert-card {
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 20px 22px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    transition: border-color .15s;
+  }
+  .cert-card:hover { border-color: var(--blue); }
+  .cert-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--blue);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: .8rem;
+  }
+  .cert-name {
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.4;
+    margin-bottom: 4px;
+  }
+  .cert-issuer {
+    font-size: .8rem;
+    color: var(--slate);
+  }
+  .cert-pursuing {
+    border: 1.5px dashed var(--blue);
+    background: var(--blue-pale);
+  }
+  .cert-pursuing .cert-icon { background: transparent; border: 2px solid var(--blue); color: var(--blue); }
+  .cert-pursuing .cert-name { color: var(--blue); }
+
+  /* === FRAMEWORKS === */
+  #frameworks { background: var(--off-white); }
+  .frameworks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+  }
+  .framework-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 20px;
+    text-align: center;
+    transition: border-color .15s, box-shadow .15s;
+  }
+  .framework-card:hover { border-color: var(--blue); box-shadow: var(--shadow-md); }
+  .fw-name {
+    font-family: var(--font-display);
+    font-size: .9375rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 6px;
+  }
+  .fw-desc {
+    font-size: .78rem;
+    color: var(--slate);
+    line-height: 1.5;
+  }
+  .fw-direct {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: .7rem;
+    font-weight: 600;
+    color: var(--blue);
+    background: var(--blue-pale);
+    padding: 2px 10px;
+    border-radius: 100px;
+  }
+  .fw-aware {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: .7rem;
+    font-weight: 600;
+    color: var(--slate);
+    background: var(--off-white);
+    border: 1px solid var(--border);
+    padding: 2px 10px;
+    border-radius: 100px;
+  }
+
+  /* === CONTACT === */
+  #contact { background: var(--navy); }
+  #contact .section-title { color: var(--white); }
+  #contact .section-label { color: var(--blue-light); }
+  #contact .section-sub { color: rgba(255,255,255,.55); max-width: 480px; }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 64px;
+    align-items: start;
+  }
+  .contact-info { }
+  .contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+  .contact-item-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba(255,255,255,.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .contact-item-icon svg { width: 18px; height: 18px; color: var(--blue-light); fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .contact-item-label {
+    font-size: .78rem;
+    color: rgba(255,255,255,.4);
+    margin-bottom: 4px;
+  }
+  .contact-item-val {
+    font-size: .9375rem;
+    color: rgba(255,255,255,.85);
+    font-weight: 500;
+  }
+  .contact-item-val a { color: var(--blue-light); }
+  .contact-btns { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 32px; }
+  .btn-wa {
+    background: #25D366;
+    color: var(--white);
+    padding: 13px 24px;
+    border-radius: var(--radius);
+    font-weight: 600;
+    font-size: .9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: opacity .15s;
+  }
+  .btn-wa:hover { opacity: .88; }
+  .btn-mail {
+    background: transparent;
+    border: 1.5px solid rgba(255,255,255,.25);
+    color: var(--white);
+    padding: 13px 24px;
+    border-radius: var(--radius);
+    font-weight: 600;
+    font-size: .9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: border-color .15s;
+  }
+  .btn-mail:hover { border-color: rgba(255,255,255,.55); }
+
+  /* === FORM === */
+  .contact-form {
+    background: rgba(255,255,255,.04);
+    border: 1px solid rgba(255,255,255,.09);
+    border-radius: var(--radius-lg);
+    padding: 32px;
+  }
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  .form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
+  .form-group:last-of-type { margin-bottom: 0; }
+  .form-group label {
+    font-size: .8125rem;
+    font-weight: 500;
+    color: rgba(255,255,255,.55);
+  }
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    background: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: var(--radius);
+    padding: 11px 14px;
+    color: var(--white);
+    font-family: var(--font-body);
+    font-size: .9rem;
+    transition: border-color .15s;
+    outline: none;
+    width: 100%;
+  }
+  .form-group input::placeholder,
+  .form-group textarea::placeholder { color: rgba(255,255,255,.3); }
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus { border-color: var(--blue-light); }
+  .form-group select { appearance: none; cursor: pointer; }
+  .form-group select option { background: var(--navy); color: var(--white); }
+  .form-group textarea { resize: vertical; min-height: 100px; }
+  .form-submit {
+    background: var(--blue);
+    color: var(--white);
+    padding: 13px 28px;
+    border-radius: var(--radius);
+    font-weight: 600;
+    font-size: .9375rem;
+    width: 100%;
+    margin-top: 20px;
+    transition: background .15s;
+    cursor: pointer;
+  }
+  .form-submit:hover { background: #1D4ED8; }
+  .form-success {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    color: #4ADE80;
+    font-weight: 500;
+  }
+
+  /* === FOOTER === */
+  footer {
+    background: #060F1A;
+    padding: 48px 0 32px;
+    border-top: 1px solid rgba(255,255,255,.07);
+  }
+  .footer-inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 32px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  .footer-brand .nav-logo { color: var(--white); font-size: 1.2rem; }
+  .footer-tagline {
+    font-size: .8125rem;
+    color: rgba(255,255,255,.35);
+    margin-top: 6px;
+    line-height: 1.6;
+  }
+  .footer-links {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .footer-links a {
+    font-size: .875rem;
+    color: rgba(255,255,255,.45);
+    transition: color .15s;
+  }
+  .footer-links a:hover { color: var(--blue-light); }
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,.07);
+    padding-top: 24px;
+    font-size: .8125rem;
+    color: rgba(255,255,255,.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  /* === BACK TO TOP === */
+  #btt {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    width: 44px;
+    height: 44px;
+    background: var(--blue);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .2s, transform .2s;
+    z-index: 90;
+    box-shadow: 0 4px 16px rgba(37,99,235,.4);
+  }
+  #btt.visible { opacity: 1; pointer-events: all; }
+  #btt:hover { transform: translateY(-2px); }
+  #btt svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+
+  /* === RESPONSIVE === */
+  @media (max-width: 900px) {
+    .about-grid { grid-template-columns: 1fr; gap: 40px; }
+    .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+    .form-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 760px) {
+    section { padding: 64px 0; }
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+    .hero-stats { gap: 28px; }
+    .footer-inner { flex-direction: column; }
+    .footer-bottom { flex-direction: column; text-align: center; }
+  }
+  @media (max-width: 480px) {
+    .hero-actions { flex-direction: column; }
+    .btn-primary, .btn-outline { justify-content: center; }
+    #hero { padding-top: 112px; }
+  }
+
+  /* === REVEAL === */
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity .5s ease, transform .5s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; transition: none; }
+    * { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="container nav-inner">
+    <a href="#" class="nav-logo">Mansoor<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
+    </ul>
+    <button class="hamburger" id="ham" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services" class="mobile-link">Services</a>
+  <a href="#about" class="mobile-link">About</a>
+  <a href="#experience" class="mobile-link">Experience</a>
+  <a href="#achievements" class="mobile-link">Achievements</a>
+  <a href="#certifications" class="mobile-link">Certifications</a>
+  <a href="#contact" class="mobile-link">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-eyebrow">Senior Cybersecurity Professional</div>
+    <h1 class="hero-title">
+      Cybersecurity &amp; IT<br>
+      Infrastructure <span class="accent">Consulting</span>
+    </h1>
+    <p class="hero-sub">
+      17+ years securing enterprise environments in financial services. ISO 27001 implementation, GRC, security assessments, and IT infrastructure — delivered remotely to clients worldwide.
+    </p>
+    <div class="hero-pills">
+      <span class="pill">Cybersecurity</span>
+      <span class="pill">ISO 27001</span>
+      <span class="pill">GRC & Risk</span>
+      <span class="pill">Security Assessments</span>
+      <span class="pill">IT Infrastructure</span>
+      <span class="pill">Zero Trust</span>
+    </div>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        Discuss a Project
+      </a>
+      <a href="https://wa.me/393934658654" target="_blank" rel="noopener" class="btn-outline">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        WhatsApp Me
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-num">17<span>+</span></div>
+        <div class="stat-label">Years of Experience</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">3<span>+</span></div>
+        <div class="stat-label">ISO 27001 Programs</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">5</div>
+        <div class="stat-label">Regulatory Frameworks</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">7<span>+</span></div>
+        <div class="stat-label">Certifications Held</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERTISE -->
+<section id="expertise">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Areas of Expertise</div>
+      <h2 class="section-title">Deep capability across the full security stack</h2>
+    </div>
+    <div class="expertise-grid">
+      <div class="expertise-card reveal">
+        <div class="expertise-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="expertise-name">ISO/IEC 27001:2022 ISMS</div>
+      </div>
+      <div class="expertise-card reveal">
+        <div class="expertise-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div class="expertise-name">GRC & Risk Management</div>
+      </div>
+      <div class="expertise-card reveal">
+        <div class="expertise-icon">
+          <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div class="expertise-name">Security Operations</div>
+      </div>
+      <div class="expertise-card reveal">
+        <div class="expertise-icon">
+          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <div class="expertise-name">IT Infrastructure</div>
+      </div>
+      <div class="expertise-card reveal">
+        <div class="expertise-icon">
+          <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+        </div>
+        <div class="expertise-name">DLP / EDR / SIEM</div>
+      </div>
+      <div class="expertise-card reveal">
+        <div class="expertise-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+        </div>
+        <div class="expertise-name">Zero Trust Architecture</div>
+      </div>
+      <div class="expertise-card reveal">
+        <div class="expertise-icon">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </div>
+        <div class="expertise-name">Vulnerability Management</div>
+      </div>
+      <div class="expertise-card reveal">
+        <div class="expertise-icon">
+          <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        </div>
+        <div class="expertise-name">Security Awareness</div>
+      </div>
+      <div class="expertise-card reveal">
+        <div class="expertise-icon">
+          <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+        </div>
+        <div class="expertise-name">Business Continuity & DR</div>
+      </div>
+      <div class="expertise-card reveal">
+        <div class="expertise-icon">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div class="expertise-name">Identity & Access Management</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Services</div>
+      <h2 class="section-title">How I can help your organisation</h2>
+      <p class="section-sub">Practical, senior-level cybersecurity and IT consulting — delivered remotely or on-site to clients across Europe, the Middle East, and beyond.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-num">01</div>
+        <div class="service-name">Cybersecurity Assessment & Audit</div>
+        <p class="service-desc">Structured evaluation of your organisation's security posture against industry standards. Identify gaps, prioritise risks, and receive a clear remediation roadmap.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">02</div>
+        <div class="service-name">ISO 27001 Implementation & Readiness</div>
+        <p class="service-desc">End-to-end ISMS implementation from gap analysis and Statement of Applicability through to certification readiness — aligned with the 2022 revision and Annex A controls.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">03</div>
+        <div class="service-name">Cybersecurity Policies & Procedures</div>
+        <p class="service-desc">Development of information security policies, procedures, and standards tailored to your organisation's risk profile, regulatory environment, and operational needs.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">04</div>
+        <div class="service-name">GRC & Risk Assessment</div>
+        <p class="service-desc">Governance, risk, and compliance programme design and management. Risk register development, control mapping, audit evidence management, and regulatory alignment.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">05</div>
+        <div class="service-name">Security Architecture & Zero Trust</div>
+        <p class="service-desc">Design and implementation of Zero Trust network architecture, including network segmentation, MFA enforcement, privileged access management, and perimeter security.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">06</div>
+        <div class="service-name">Vulnerability & Threat Management</div>
+        <p class="service-desc">Regular vulnerability assessments using CVSS scoring and MITRE ATT&CK-mapped detections. Prioritised remediation planning with measurable SLA compliance tracking.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">07</div>
+        <div class="service-name">DLP / EDR / SIEM Consulting</div>
+        <p class="service-desc">Deployment and optimisation of Data Loss Prevention, Endpoint Detection &amp; Response, and SIEM platforms. Tuning, correlation rules, and automated playbook development.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">08</div>
+        <div class="service-name">IT Infrastructure & Network Security</div>
+        <p class="service-desc">Secure IT infrastructure design and hardening — firewall architecture, VLAN segmentation, server virtualisation, Active Directory, and network perimeter security.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">09</div>
+        <div class="service-name">Business Continuity & Disaster Recovery</div>
+        <p class="service-desc">BCP and DR programme design aligned with ISO 22301. Backup architecture, failover/failback planning, RTO/RPO definition, and DR exercise facilitation.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">10</div>
+        <div class="service-name">Security Awareness & Phishing Programmes</div>
+        <p class="service-desc">Design and delivery of security awareness programmes and phishing simulation campaigns that produce measurable reductions in human-layer risk across your workforce.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">11</div>
+        <div class="service-name">Third-Party & Vendor Risk Assessment</div>
+        <p class="service-desc">Structured TPRM programmes covering vendor onboarding assessments, security due diligence, SLA monitoring, and ongoing compliance reviews for critical suppliers.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">12</div>
+        <div class="service-name">IT Security Consulting</div>
+        <p class="service-desc">Flexible senior-level IT and security advisory for SMEs and startups — from ad hoc technical guidance to embedded consulting engagements and vCISO support.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <div class="section-label">About</div>
+        <h2 class="section-title">Senior cybersecurity professional, available globally</h2>
+        <p class="about-highlight">I bring over 17 years of hands-on experience securing enterprise environments — primarily in the financial services sector across the Middle East.</p>
+        <p>My career has spanned the full information security lifecycle: from architecting secure IT infrastructure and leading ISO/IEC 27001 ISMS implementations to running security operations, managing regulatory compliance programmes, and building security-aware organisational cultures.</p>
+        <p>I have worked with SAMA-regulated financial institutions, managed multi-site enterprise infrastructure, and built compliance programmes aligned with frameworks including ISO 27001, NIST CSF, SAMA CSF, NCA DCC, and SDAIA PDPL. This depth of cross-framework experience means I can help organisations meet complex, overlapping regulatory demands efficiently — without duplicating effort.</p>
+        <p>Based in Bari, Italy, I now offer my expertise to SMEs, startups, financial services organisations, and any business that needs senior cybersecurity and IT consulting delivered remotely or on-site across Europe and internationally.</p>
+      </div>
+      <div class="about-details reveal">
+        <div class="about-detail-item">
+          <div class="detail-label">Location</div>
+          <div class="detail-value">Bari, Italy — available globally</div>
+        </div>
+        <div class="about-detail-item">
+          <div class="detail-label">Experience</div>
+          <div class="detail-value">17+ years in cybersecurity and IT infrastructure</div>
+        </div>
+        <div class="about-detail-item">
+          <div class="detail-label">Sector Focus</div>
+          <div class="detail-value">Financial services, SMEs, Startups, Enterprises</div>
+        </div>
+        <div class="about-detail-item">
+          <div class="detail-label">Specialisms</div>
+          <div class="detail-value">ISO 27001, GRC, Security Operations, IT Infrastructure</div>
+        </div>
+        <div class="about-detail-item">
+          <div class="detail-label">Engagements</div>
+          <div class="detail-value">Remote and on-site consulting, project-based and retainer</div>
+        </div>
+        <div class="about-detail-item">
+          <div class="detail-label">Languages</div>
+          <div class="detail-value">English (Fluent) · Urdu (Native) · Arabic (Professional)</div>
+        </div>
+        <div class="about-detail-item">
+          <div class="detail-label">Email</div>
+          <div class="detail-value"><a href="mailto:info@themansoor.com">info@themansoor.com</a></div>
+        </div>
+        <div class="about-detail-item">
+          <div class="detail-label">LinkedIn</div>
+          <div class="detail-value"><a href="https://linkedin.com/in/th3mansoor" target="_blank" rel="noopener">linkedin.com/in/th3mansoor</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Experience</div>
+      <h2 class="section-title">Professional background</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot current"></div>
+        <div class="timeline-date">Sep 2025 – Present</div>
+        <div class="timeline-role">Senior Information Security Specialist</div>
+        <div class="timeline-company">Fuel Finance Company · Riyadh, Saudi Arabia</div>
+        <div class="timeline-body">
+          <p>Lead enterprise-wide information security strategy, governance, and operations for a SAMA-regulated financial institution. Full accountability for ISO/IEC 27001 ISMS, cyber resilience, regulatory compliance, and security architecture.</p>
+          <p>Spearheaded full ISO/IEC 27001:2022 ISMS implementation — gap analysis, Statement of Applicability, risk treatment plans — achieving zero major non-conformities in the external certification audit. Implemented a unified control framework compliant with SAMA CSF, NCA DCC, SDAIA PDPL, ISO 27001, and NIST CSF simultaneously.</p>
+          <p>Deployed and tuned Symantec EDR and Forcepoint DLP across 75+ endpoints; implemented Sectona PAM for Zero Trust privileged access; administered SIEM using Seceon and Wazuh with MITRE ATT&CK-mapped detections; managed full backup and DR programme achieving RTO &lt;4 hours and RPO &lt;1 hour.</p>
+        </div>
+        <div class="timeline-tags">
+          <span class="tag">ISO 27001</span>
+          <span class="tag">GRC</span>
+          <span class="tag">SIEM</span>
+          <span class="tag">Zero Trust</span>
+          <span class="tag">DLP</span>
+          <span class="tag">EDR</span>
+          <span class="tag">Veeam</span>
+          <span class="tag">SAMA CSF</span>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Sep 2023 – Sep 2025</div>
+        <div class="timeline-role">Cybersecurity Specialist</div>
+        <div class="timeline-company">Tawkelat Financing Company · Riyadh, Saudi Arabia</div>
+        <div class="timeline-body">
+          <p>Secured IT infrastructure and led regulatory compliance programmes for a SAMA-licensed financing company, including ISO/IEC 27001 readiness and full security operations ownership across 150+ endpoints.</p>
+          <p>Drove ISO 27001 readiness — internal gap assessments against all 93 Annex A controls, corrective action plans, unified compliance matrix covering SAMA CSF and NCA DCC. Deployed Sophos Central EDR, Forcepoint DLP, Forescout NAC, Sahara SIEM, and Wazuh. Delivered KnowBe4 phishing simulation campaigns reducing susceptibility by 40% across 200+ employees.</p>
+        </div>
+        <div class="timeline-tags">
+          <span class="tag">ISO 27001 Readiness</span>
+          <span class="tag">Sophos</span>
+          <span class="tag">Forescout NAC</span>
+          <span class="tag">KnowBe4</span>
+          <span class="tag">Wazuh</span>
+          <span class="tag">MITRE ATT&CK</span>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Nov 2011 – Sep 2023</div>
+        <div class="timeline-role">IT & Network Administrator</div>
+        <div class="timeline-company">Marei Bin Mahfouz Group & Co. · Makkah, Saudi Arabia</div>
+        <div class="timeline-body">
+          <p>Managed end-to-end IT infrastructure for a multi-site enterprise group over 12 years — virtualisation, network security, business continuity, and IT governance for 400+ users across multiple locations.</p>
+          <p>Managed VMware vCenter hosting 40+ VMs; administered Active Directory for 400+ users; maintained 99.9% network uptime via SonicWall HA firewalls and VLAN segmentation; served as BCM lead for DR exercises in 2022 and 2023; enforced endpoint security via Sophos Central across 300+ devices; developed HR automation applications using ASP.NET and SQL Server.</p>
+        </div>
+        <div class="timeline-tags">
+          <span class="tag">VMware</span>
+          <span class="tag">Active Directory</span>
+          <span class="tag">SonicWall</span>
+          <span class="tag">Veeam</span>
+          <span class="tag">Sophos</span>
+          <span class="tag">Cisco</span>
+          <span class="tag">DR/BCP</span>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Jan 2010 – Oct 2011</div>
+        <div class="timeline-role">IT Consultant (Independent)</div>
+        <div class="timeline-company">Self-employed · Pakistan / Saudi Arabia</div>
+        <div class="timeline-body">
+          <p>Provided freelance IT consulting and network administration services to SME clients — network setup, system administration, and technical support across multiple client engagements.</p>
+        </div>
+        <div class="timeline-tags">
+          <span class="tag">IT Consulting</span>
+          <span class="tag">Network Administration</span>
+          <span class="tag">SME Support</span>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Feb 2007 – Dec 2009</div>
+        <div class="timeline-role">IT Support Specialist</div>
+        <div class="timeline-company">Starlink United Group · Kuwait City, Kuwait</div>
+        <div class="timeline-body">
+          <p>Delivered L1/L2 technical support for hardware, software, and networking across a 100+ user environment. Ensured network security compliance, backup support, and maintained user onboarding documentation.</p>
+        </div>
+        <div class="timeline-tags">
+          <span class="tag">Technical Support</span>
+          <span class="tag">Networking</span>
+          <span class="tag">Security Compliance</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Key Achievements</div>
+      <h2 class="section-title">Results that speak for themselves</h2>
+      <p class="section-sub">Quantified outcomes from enterprise security programmes across financial services organisations.</p>
+    </div>
+    <div class="achievements-grid">
+      <div class="achievement-card reveal">
+        <div class="ach-num">99.9<span class="ach-accent">%</span></div>
+        <div class="ach-label">Perimeter uptime across HQ and DR sites via HA firewall architecture</div>
+      </div>
+      <div class="achievement-card reveal">
+        <div class="ach-num">86<span class="ach-accent">%</span></div>
+        <div class="ach-label">Reduction in data exfiltration risk through EDR and DLP deployment</div>
+      </div>
+      <div class="achievement-card reveal">
+        <div class="ach-num">35<span class="ach-accent">%</span></div>
+        <div class="ach-label">Reduction in Mean Time to Detect (MTTD) via tuned SIEM correlation rules</div>
+      </div>
+      <div class="achievement-card reveal">
+        <div class="ach-num">64<span class="ach-accent">%</span></div>
+        <div class="ach-label">Reduction in standing privileged accounts through Zero Trust and PAM</div>
+      </div>
+      <div class="achievement-card reveal">
+        <div class="ach-num">&lt;4<span class="ach-accent">h</span></div>
+        <div class="ach-label">RTO achieved with Veeam backup architecture and confirmed failover simulations</div>
+      </div>
+      <div class="achievement-card reveal">
+        <div class="ach-num">90<span class="ach-accent">%+</span></div>
+        <div class="ach-label">Vulnerability remediation rate within defined SLA windows</div>
+      </div>
+      <div class="achievement-card reveal">
+        <div class="ach-num">100<span class="ach-accent">%</span></div>
+        <div class="ach-label">Critical patch compliance on all critical systems within 24-hour SLA</div>
+      </div>
+      <div class="achievement-card reveal">
+        <div class="ach-num">40<span class="ach-accent">%+</span></div>
+        <div class="ach-label">Reduction in phishing susceptibility across 200+ employees over 12 months</div>
+      </div>
+      <div class="achievement-card reveal">
+        <div class="ach-num">34<span class="ach-accent">%</span></div>
+        <div class="ach-label">Vendor cost savings across three enterprise technology solutions through negotiation</div>
+      </div>
+      <div class="achievement-card reveal">
+        <div class="ach-num">0</div>
+        <div class="ach-label">Major non-conformities in ISO 27001 external certification audit</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Technical Skills</div>
+      <h2 class="section-title">Tools & technologies</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-group reveal">
+        <div class="skill-group-title">Security Tools</div>
+        <div class="skill-badges">
+          <span class="badge">SentinelOne EDR</span>
+          <span class="badge">Microsoft Defender</span>
+          <span class="badge">Microsoft Purview</span>
+          <span class="badge">Symantec EDR</span>
+          <span class="badge">Sophos Central EDR</span>
+          <span class="badge">Forcepoint DLP</span>
+          <span class="badge">ManageEngine DLP</span>
+          <span class="badge">Forescout NAC</span>
+          <span class="badge">Seceon SIEM</span>
+          <span class="badge">Sahara SIEM</span>
+          <span class="badge">Wazuh</span>
+          <span class="badge">KnowBe4</span>
+          <span class="badge">Sectona PAM</span>
+          <span class="badge">Guacamole PAM</span>
+          <span class="badge">ManageEngine Endpoint Central</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-title">GRC & Compliance</div>
+        <div class="skill-badges">
+          <span class="badge">ISO/IEC 27001:2022</span>
+          <span class="badge">SAMA CSF</span>
+          <span class="badge">NCA DCC</span>
+          <span class="badge">SDAIA PDPL</span>
+          <span class="badge">NIST CSF 2.0</span>
+          <span class="badge">CIS Controls v8</span>
+          <span class="badge">CISO ASSISTANT</span>
+          <span class="badge">Eramba</span>
+          <span class="badge">Risk Assessment</span>
+          <span class="badge">Statement of Applicability</span>
+          <span class="badge">Audit Management</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-title">Frameworks & Methods</div>
+        <div class="skill-badges">
+          <span class="badge">Zero Trust Architecture</span>
+          <span class="badge">MITRE ATT&CK</span>
+          <span class="badge">ITIL v4</span>
+          <span class="badge">BCP / DR</span>
+          <span class="badge">RBAC</span>
+          <span class="badge">MFA</span>
+          <span class="badge">CVSS Scoring</span>
+          <span class="badge">Incident Response</span>
+          <span class="badge">Vulnerability Assessment</span>
+          <span class="badge">Security Awareness</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-title">Infrastructure</div>
+        <div class="skill-badges">
+          <span class="badge">Microsoft Azure</span>
+          <span class="badge">Microsoft Intune</span>
+          <span class="badge">Office 365</span>
+          <span class="badge">VMware vCenter</span>
+          <span class="badge">Hyper-V</span>
+          <span class="badge">Dell VxRail HCI</span>
+          <span class="badge">Windows Server</span>
+          <span class="badge">Active Directory</span>
+          <span class="badge">DNS / DHCP / GPO</span>
+          <span class="badge">Veeam Backup & Replication</span>
+          <span class="badge">SAN / NAS</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-title">Network & Firewall</div>
+        <div class="skill-badges">
+          <span class="badge">SonicWall</span>
+          <span class="badge">Sophos Firewall</span>
+          <span class="badge">Cisco Switching</span>
+          <span class="badge">Dell TOR Switching</span>
+          <span class="badge">VLANs</span>
+          <span class="badge">VPN</span>
+          <span class="badge">HA Firewall</span>
+          <span class="badge">IPS</span>
+          <span class="badge">SSL Inspection</span>
+          <span class="badge">DPI</span>
+          <span class="badge">Port Channeling</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-title">Development & Tools</div>
+        <div class="skill-badges">
+          <span class="badge">ASP.NET</span>
+          <span class="badge">SQL Server</span>
+          <span class="badge">Visual Studio</span>
+          <span class="badge">ManageEngine Patch Manager</span>
+          <span class="badge">IT Asset Management</span>
+          <span class="badge">Network Diagramming</span>
+          <span class="badge">Microsoft Dynamics 365</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Certifications</div>
+      <h2 class="section-title">Professional credentials</h2>
+    </div>
+    <div class="certs-grid">
+      <div class="cert-card reveal">
+        <div class="cert-icon">ISO</div>
+        <div>
+          <div class="cert-name">ISO/IEC 27001:2022 Lead Implementer</div>
+          <div class="cert-issuer">PECB · 2025</div>
+        </div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-icon">Sec+</div>
+        <div>
+          <div class="cert-name">CompTIA Security+ (SY0-701)</div>
+          <div class="cert-issuer">CompTIA · 2024</div>
+        </div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-icon">Net+</div>
+        <div>
+          <div class="cert-name">CompTIA Network+ (N10-009)</div>
+          <div class="cert-issuer">CompTIA · 2024</div>
+        </div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-icon">SPH</div>
+        <div>
+          <div class="cert-name">Sophos Central Endpoint Protection Administrator</div>
+          <div class="cert-issuer">Sophos · 2025</div>
+        </div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-icon">SFW</div>
+        <div>
+          <div class="cert-name">Sophos Firewall Administrator</div>
+          <div class="cert-issuer">Sophos · 2025</div>
+        </div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-icon">VCE</div>
+        <div>
+          <div class="cert-name">Veeam Certified Engineer – Backup & Replication</div>
+          <div class="cert-issuer">Veeam · 2025</div>
+        </div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-icon">ME</div>
+        <div>
+          <div class="cert-name">ManageEngine Patch Manager Plus Certified</div>
+          <div class="cert-issuer">ManageEngine · 2024</div>
+        </div>
+      </div>
+      <div class="cert-card cert-pursuing reveal">
+        <div class="cert-icon">ISC²</div>
+        <div>
+          <div class="cert-name">CISSP — Currently Pursuing</div>
+          <div class="cert-issuer">ISC²</div>
+        </div>
+      </div>
+      <div class="cert-card cert-pursuing reveal">
+        <div class="cert-icon">ISCA</div>
+        <div>
+          <div class="cert-name">CISM — Currently Pursuing</div>
+          <div class="cert-issuer">ISACA</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FRAMEWORKS -->
+<section id="frameworks">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Regulatory & Compliance Expertise</div>
+      <h2 class="section-title">Frameworks I work with</h2>
+      <p class="section-sub">Cross-framework implementation experience spanning Middle Eastern, international, and EU regulatory standards.</p>
+    </div>
+    <div class="frameworks-grid">
+      <div class="framework-card reveal">
+        <div class="fw-name">ISO/IEC 27001:2022</div>
+        <div class="fw-desc">ISMS implementation, certification readiness, Annex A controls</div>
+        <span class="fw-direct">Direct Implementation</span>
+      </div>
+      <div class="framework-card reveal">
+        <div class="fw-name">NIST CSF 2.0</div>
+        <div class="fw-desc">Cybersecurity framework alignment and control mapping</div>
+        <span class="fw-direct">Direct Experience</span>
+      </div>
+      <div class="framework-card reveal">
+        <div class="fw-name">CIS Controls v8</div>
+        <div class="fw-desc">Implementation guidance and control mapping</div>
+        <span class="fw-direct">Direct Experience</span>
+      </div>
+      <div class="framework-card reveal">
+        <div class="fw-name">SAMA CSF</div>
+        <div class="fw-desc">Saudi Arabia Monetary Authority Cybersecurity Framework</div>
+        <span class="fw-direct">Direct Implementation</span>
+      </div>
+      <div class="framework-card reveal">
+        <div class="fw-name">NCA DCC</div>
+        <div class="fw-desc">National Cybersecurity Authority — ECC, TCC, CSCC controls</div>
+        <span class="fw-direct">Direct Implementation</span>
+      </div>
+      <div class="framework-card reveal">
+        <div class="fw-name">SDAIA PDPL</div>
+        <div class="fw-desc">Saudi Personal Data Protection Law compliance</div>
+        <span class="fw-direct">Direct Implementation</span>
+      </div>
+      <div class="framework-card reveal">
+        <div class="fw-name">ISO 22301</div>
+        <div class="fw-desc">Business Continuity Management System</div>
+        <span class="fw-direct">Direct Experience</span>
+      </div>
+      <div class="framework-card reveal">
+        <div class="fw-name">GDPR</div>
+        <div class="fw-desc">EU data protection principles and compliance alignment</div>
+        <span class="fw-aware">Awareness / Mapping</span>
+      </div>
+      <div class="framework-card reveal">
+        <div class="fw-name">NIS2</div>
+        <div class="fw-desc">EU Network & Information Security Directive alignment</div>
+        <span class="fw-aware">Awareness / Mapping</span>
+      </div>
+      <div class="framework-card reveal">
+        <div class="fw-name">DORA</div>
+        <div class="fw-desc">EU Digital Operational Resilience Act alignment</div>
+        <span class="fw-aware">Awareness / Mapping</span>
+      </div>
+      <div class="framework-card reveal">
+        <div class="fw-name">SOC 2</div>
+        <div class="fw-desc">Trust Services Criteria controls mapping</div>
+        <span class="fw-aware">Controls Mapping</span>
+      </div>
+      <div class="framework-card reveal">
+        <div class="fw-name">ASD Essential Eight</div>
+        <div class="fw-desc">Australian Signals Directorate mitigation strategies</div>
+        <span class="fw-aware">Awareness / Mapping</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Get in Touch</div>
+      <h2 class="section-title">Have a cybersecurity or IT project in mind?</h2>
+      <p class="section-sub">Let's discuss how I can help. I work with clients remotely across Europe, the Middle East, and beyond.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <div class="contact-item">
+          <div class="contact-item-icon">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <div class="contact-item-label">Location</div>
+            <div class="contact-item-val">Bari, Italy — available globally</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div>
+            <div class="contact-item-label">Email</div>
+            <div class="contact-item-val"><a href="mailto:info@themansoor.com">info@themansoor.com</a></div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">
+            <svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </div>
+          <div>
+            <div class="contact-item-label">WhatsApp</div>
+            <div class="contact-item-val">+39 393 4658654</div>
+          </div>
+        </div>
+        <div class="contact-btns">
+          <a href="https://wa.me/393934658654" target="_blank" rel="noopener" class="btn-wa">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            WhatsApp
+          </a>
+          <a href="mailto:info@themansoor.com" class="btn-mail">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Send Email
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form reveal">
+        <form id="contactForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="cf-name">Full Name</label>
+              <input type="text" id="cf-name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label for="cf-email">Email Address</label>
+              <input type="email" id="cf-email" name="email" placeholder="your@email.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cf-company">Company / Organisation</label>
+            <input type="text" id="cf-company" name="company" placeholder="Your company name">
+          </div>
+          <div class="form-group">
+            <label for="cf-service">Service Required</label>
+            <select id="cf-service" name="service">
+              <option value="" disabled selected>Select a service...</option>
+              <option>Cybersecurity Assessment & Audit</option>
+              <option>ISO 27001 Implementation & Readiness</option>
+              <option>Cybersecurity Policies & Procedures</option>
+              <option>GRC & Risk Assessment</option>
+              <option>Security Architecture & Zero Trust</option>
+              <option>Vulnerability & Threat Management</option>
+              <option>DLP / EDR / SIEM Consulting</option>
+              <option>IT Infrastructure & Network Security</option>
+              <option>Business Continuity & Disaster Recovery</option>
+              <option>Security Awareness & Phishing Programme</option>
+              <option>Third-Party & Vendor Risk Assessment</option>
+              <option>IT Security Consulting / vCISO</option>
+              <option>Other / Not Sure Yet</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="cf-msg">Message</label>
+            <textarea id="cf-msg" name="message" placeholder="Tell me briefly about your project or requirement..." required></textarea>
+          </div>
+          <button type="submit" class="form-submit">Send Message</button>
+          <div class="form-success" id="formSuccess">
+            ✓ Your message has been sent. I'll be in touch shortly.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="nav-logo">Mansoor<span style="color:var(--blue)">.</span></div>
+        <div class="footer-tagline">
+          Senior Information Security Specialist<br>
+          Cybersecurity & IT Infrastructure Consulting<br>
+          Bari, Italy
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="https://wa.me/393934658654" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="mailto:info@themansoor.com">Email</a>
+        <a href="https://linkedin.com/in/th3mansoor" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="yr"></span> Mansoor Ahmed. All rights reserved.</span>
+      <span>themansoor.com</span>
+    </div>
+  </div>
+</footer>
+
+<!-- BACK TO TOP -->
+<button id="btt" aria-label="Back to top">
+  <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<script>
+  // Year
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // Nav scroll
+  const nav = document.getElementById('nav');
+  const btt = document.getElementById('btt');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 60) {
+      nav.classList.add('scrolled');
+      btt.classList.add('visible');
+    } else {
+      nav.classList.remove('scrolled');
+      btt.classList.remove('visible');
+    }
+  }, { passive: true });
+
+  btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  // Hamburger
+  const ham = document.getElementById('ham');
+  const mm = document.getElementById('mobileMenu');
+  ham.addEventListener('click', () => {
+    ham.classList.toggle('open');
+    mm.classList.toggle('open');
+  });
+  document.querySelectorAll('.mobile-link').forEach(a => {
+    a.addEventListener('click', () => {
+      ham.classList.remove('open');
+      mm.classList.remove('open');
+    });
+  });
+
+  // Reveal on scroll
+  const reveals = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+  reveals.forEach(r => io.observe(r));
+
+  // Contact form — mailto fallback (static-compatible)
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name    = document.getElementById('cf-name').value.trim();
+    const email   = document.getElementById('cf-email').value.trim();
+    const company = document.getElementById('cf-company').value.trim();
+    const service = document.getElementById('cf-service').value;
+    const msg     = document.getElementById('cf-msg').value.trim();
+
+    const subject = encodeURIComponent('Consulting Enquiry from ' + name + (company ? ' (' + company + ')' : ''));
+    const body = encodeURIComponent(
+      'Name: ' + name + '\n' +
+      'Email: ' + email + '\n' +
+      'Company: ' + (company || 'Not provided') + '\n' +
+      'Service Required: ' + (service || 'Not specified') + '\n\n' +
+      'Message:\n' + msg
+    );
+
+    window.location.href = 'mailto:info@themansoor.com?subject=' + subject + '&body=' + body;
+
+    // Show success message
+    document.getElementById('formSuccess').style.display = 'block';
+    this.reset();
+    setTimeout(() => { document.getElementById('formSuccess').style.display = 'none'; }, 5000);
+  });
+</script>
+</body>
+</html>

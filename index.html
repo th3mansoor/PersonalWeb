@@ -79,6 +79,13 @@
   section { padding: 88px 0; }
 
   /* === NAV === */
+#foo {
+    color: #000; /* Fallback for older browsers */
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 8pt;
+    font-family: Arial, sans-serif;
+}
+
   #nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -926,7 +933,7 @@
 <!-- NAV -->
 <nav id="nav">
   <div class="container nav-inner">
-    <a href="#" class="nav-logo">Mansoor<span>.</span>112211</a>
+    <a href="#" class="nav-logo">Mansoor<span>.</span><span class="foo">112211</span></a>
     <ul class="nav-links">
       <li><a href="#services">Services</a></li>
       <li><a href="#about">About</a></li>
